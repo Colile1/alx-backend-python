@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
-"""Module for to_kv function: returns a tuple with a string 
-and the square of a number."""
+"""
+Module for to_kv function: returns a tuple with a string
+and the square of a number.
+"""
 
 from typing import Union, Tuple
 
