@@ -10,5 +10,5 @@ pi: float = 3.14
 i_understand_annotations: bool = True
 """A boolean with value True."""
 
-school: str = "ALX"
-"""A string with value 'ALX'."""
+school: str = "Holberton"
+"""A string with value 'Holberton'."""
