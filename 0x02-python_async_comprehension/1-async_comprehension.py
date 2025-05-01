@@ -1,18 +1,19 @@
 #!/usr/bin/env python3
 """
-Module for async_comprehension coroutine.
-This module provides a coroutine that collects random numbers using async
-comprehension.
+Module contains a coroutine using async comprehension.
 """
 
-
+import asyncio
 from typing import List
-from 0-async_generator import async_generator
+
+# Correctly import async_generator from the specified module file name
+async_generator = __import__('0-async_generator').async_generator
 
 
 async def async_comprehension() -> List[float]:
     """
-    Collect 10 random numbers from async_generator using async comprehension
-    and return them.
+    Coroutine that collects 10 random numbers from async_generator
+    using an async comprehension and returns them.
     """
-    return [i async for i in async_generator()]
+    result = [i async for i in async_generator()]
+    return result
